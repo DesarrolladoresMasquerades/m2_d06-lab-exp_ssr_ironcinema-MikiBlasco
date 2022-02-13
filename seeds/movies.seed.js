@@ -91,8 +91,8 @@ const movies = [
 
   
   Movie.create(movies)
-  .then(moviesFromDb => {
-    console.log(`${moviesFromDb.length} movies have been created succesfully in your DB`),
+  .then(moviesFromDB => {
+    console.log(`${moviesFromDB.length} movies have been created succesfully in your DB`),
     mongoose.connection.close()
   })
   .catch(error => console.log('there is a problem creating the movies in your DB: ', error))
